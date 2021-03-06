@@ -6,7 +6,7 @@
 /*   By: sbertali <sbertali@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/25 18:11:32 by sbertali          #+#    #+#             */
-/*   Updated: 2021/03/06 14:01:50 by sbertali         ###   ########.fr       */
+/*   Updated: 2021/03/06 14:09:59 by sbertali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <stdlib.h>
 
 # define MAX_FILE_DESCRIPTOR	RLIMIT_NOFILE
-# define BUFFER_SIZE=42//apagar
+# define BUFFER_SIZE 42//apagar
 
 int		get_next_line(int fd, char **line);
 

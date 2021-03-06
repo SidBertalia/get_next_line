@@ -6,11 +6,16 @@
 /*   By: sbertali <sbertali@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/25 18:11:45 by sbertali          #+#    #+#             */
-/*   Updated: 2021/03/05 22:36:12 by sbertali         ###   ########.fr       */
+/*   Updated: 2021/03/06 16:44:48 by sbertali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+
+/*
+** Retorna posição do caracter procurado na string.
+** Funciona como ft_strlen mas informa posição em que encontrou
+*/
 
 size_t	ft_strclen(const char *str, const char c)
 {
@@ -22,6 +27,10 @@ size_t	ft_strclen(const char *str, const char c)
 	return (i);
 }
 
+/*
+** Calcula o comprimento da string
+*/
+
 size_t	ft_strlen(const char *str)
 {
 	int	i;
@@ -32,6 +41,10 @@ size_t	ft_strlen(const char *str)
 	return (i);
 }
 
+/*
+** Libera memória do ponteiro da string
+*/
+
 void	ft_strdel(char **str)
 {
 	if (*str && str)
@@ -40,6 +53,10 @@ void	ft_strdel(char **str)
 		*str = NULL;
 	}
 }
+
+/*
+** Copia "n" bytes da área de memória src para a área de memória dest.
+*/
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -55,6 +72,11 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+/*
+** Junta as strings fornecidas para montar uma nova string e
+** libera a memória do buffer.
+*/
 
 char	*ft_strjoin_free(char *dest, char *src)
 {
