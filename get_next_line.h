@@ -6,7 +6,7 @@
 /*   By: sbertali <sbertali@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/25 18:11:32 by sbertali          #+#    #+#             */
-/*   Updated: 2021/03/06 16:44:48 by sbertali         ###   ########.fr       */
+/*   Updated: 2021/06/03 21:29:07 by sbertali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-# define MAX_FILE_DESCRIPTOR	RLIMIT_NOFILE//número maxímo de arquivos a serem lidos
-# define BUFFER_SIZE 42//apagar antes de entregar
+# define MAX_FILE_DESCRIPTOR	RLIMIT_NOFILE
+# define BUFFER_SIZE 42
 
 int		get_next_line(int fd, char **line);
 
